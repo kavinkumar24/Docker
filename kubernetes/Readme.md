@@ -252,3 +252,16 @@ spec:
   type: NodePort
 ```
 
+### Output 
+
+![alt text](./assests/O1.png)
+
+![alt text](./assests/O2.png)
+
+![alt text](./assests/O3.png)
+
+![alt text](./assests/O4.png)
+
+![alt text](./assests/O5.png)
+
+![alt text](./assests/O6.png)
