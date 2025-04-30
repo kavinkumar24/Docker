@@ -92,4 +92,4 @@ kubectl log [pod name]
 kubectl exec -it [pod name] --bin/bash
 ```
 
-Interactive Terminal
+Interactive Terminal.
