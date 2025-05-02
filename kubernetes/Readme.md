@@ -45,6 +45,16 @@
 - Pod can be `replicated`, so if one fails other will be still `alive`.
 - DB is not replicated directly because it contains stateful data for that `StatefulSet` is being used
 
+### Traffic Handling in the Cluster
+
+By default there is a three mechanisms to handle the request automatically.
+
+- `kube-proxy`: Runs on every node and maintains routing rules.
+
+- `iptables or IPVS`: Kernel-level load balancing on each node.
+
+- `Endpoints`: Kubernetes tracks which pods match the Service, and updates routing.
+
 ## 3 Node Process in K8S
 
 - Kubelet (CLI tool)
@@ -252,7 +262,7 @@ spec:
   type: NodePort
 ```
 
-### Output 
+### Output
 
 ![alt text](./assests/O1.png)
 
